@@ -3,11 +3,10 @@
     :class="[
       'button flex gap-2 justify-between w-full',
       getButtonVariant,
-      getButtonSize,
       { 'flex-row-reverse': isIconOnLeft },
     ]"
   >
-    <span class="block button-label">{{ label }}</span>
+    <span v-if="label" class="block">{{ label }}</span>
     <img
       v-if="image"
       class="block button-icon"
@@ -33,7 +32,7 @@ type Props = {
 const props = withDefaults(defineProps<Props>(), {
   iconDirection: ButtonDirections.Right,
   image: "",
-  label: "Label",
+  label: "",
   size: ButtonSizes.Normal,
   variant: ButtonVariants.Primary,
 });
@@ -50,16 +49,6 @@ const getButtonVariant = computed(() => {
   }
 
   return "button--primary";
-});
-
-const getButtonSize = computed(() => {
-  if (props.size === ButtonSizes.Medium) {
-    return "button--medium";
-  } else if (props.size === ButtonSizes.Small) {
-    return "button--small";
-  }
-
-  return "button--normal";
 });
 </script>
 
@@ -147,33 +136,6 @@ const getButtonSize = computed(() => {
     &:active {
       background-color: #e8f5e9;
       outline: 0;
-    }
-  }
-
-  &--normal {
-    padding: 16px 32px;
-
-    .button-label {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  &--medium {
-    padding: 14px 32px;
-
-    .button-label {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
-
-  &--small {
-    padding: 8px 24px;
-
-    .button-label {
-      font-size: 14px;
-      line-height: 16px;
     }
   }
 }
