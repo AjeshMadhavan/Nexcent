@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[
-      'button flex gap-2',
+      'button flex gap-2 w-full justify-between',
       getButtonVariant(),
       getButtonSize(),
       { 'flex-row-reverse': isIconOnLeft },
