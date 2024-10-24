@@ -123,6 +123,8 @@ export default {
       },
       spacing: {
         288: "1152px",
+        150: "600px",
+        200: "800px",
       },
       keyframes: {
         marquee: {
