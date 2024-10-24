@@ -2,9 +2,10 @@
   <button
     :class="[
       'button flex gap-2 justify-between w-full',
-      getButtonVariant,
+      buttonVariant,
       { 'flex-row-reverse': isIconOnLeft },
     ]"
+    @click="onClick"
   >
     <span v-if="label" class="block">{{ label }}</span>
     <img
@@ -37,11 +38,15 @@ const props = withDefaults(defineProps<Props>(), {
   variant: ButtonVariants.Primary,
 });
 
+const emits = defineEmits<{
+  (event: "click", value: Event): void;
+}>();
+
 const isIconOnLeft = computed(
   () => props.iconDirection === ButtonDirections.Left
 );
 
-const getButtonVariant = computed(() => {
+const buttonVariant = computed(() => {
   if (props.variant === ButtonVariants.Secondary) {
     return "button--secondary";
   } else if (props.variant === ButtonVariants.Tertiary) {
@@ -50,6 +55,10 @@ const getButtonVariant = computed(() => {
 
   return "button--primary";
 });
+
+const onClick = (event: Event) => {
+  emits("click", event);
+};
 </script>
 
 <style lang="scss" scoped>
