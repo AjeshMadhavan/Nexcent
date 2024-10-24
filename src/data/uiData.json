@@ -11,15 +11,15 @@
     "buttonTexts": {
       "login": "Login",
       "signup": "Sign up"
-    },
-    "heroBanner": {
-      "title": {
-        "text": "Lessons and insights",
-        "hightlight": "from 8 years"
-      },
-      "description": "Where to grow your business as a photographer: site or social media?",
-      "buttonText": "Register"
     }
+  },
+  "heroBanner": {
+    "title": {
+      "text": "Lessons and insights",
+      "hightlight": "from 8 years"
+    },
+    "description": "Where to grow your business as a photographer: site or social media?",
+    "buttonText": "Register"
   },
   "clientsSection": {
     "title": "Our Clients",
