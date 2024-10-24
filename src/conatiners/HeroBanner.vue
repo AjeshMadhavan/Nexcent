@@ -17,9 +17,8 @@
       >
         {{ description }}
       </p>
-      <!--empty wrapper to implement button-->
       <div class="button-wrapper mx-auto mt-8 w-full md:w-96 xl:mx-0 xl:w-fit">
-        <Button :label="buttonText" />
+        <Button :label="buttonText" class="custom-button" />
       </div>
     </div>
     <div
@@ -46,4 +45,9 @@ import Button from "../components/Button.vue";
 const { title, description, buttonText } = uiData.heroBanner;
 </script>
 
-<style scoped></style>
+<style scoped>
+.custom-button {
+  padding: 14px 32px;
+  font-weight: 500;
+}
+</style>
