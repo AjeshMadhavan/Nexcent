@@ -75,7 +75,10 @@
         "buttonText": "Learn More"
     },
     "localBusinessSection": {
-        "title": "Helping a local business reinvent itself",
+        "title": {
+            "text": "Helping a local",
+            "hightlight": "business reinvent itself"
+        },
         "description": "We reached here with our hard work and dedication",
         "businessDetails": [
             {
@@ -154,7 +157,7 @@
         "buttonText": "Get a Demo"
     },
     "footerSection": {
-        "copyrigntTexts": [
+        "copyrignts": [
             "Copyright © 2020 Nexcent ltd.",
             "All rights reserved"
         ],
@@ -165,7 +168,7 @@
             "Youtube"
         ],
         "footerNavItems": {
-            "links": [
+            "navLinks": [
                 {
                     "title": "Company",
                     "links": [
