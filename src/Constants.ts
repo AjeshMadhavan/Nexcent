@@ -1,16 +1,16 @@
 export enum ButtonVariants {
-  PRIMARY = "Primary",
-  SECONDARY = "Secondary",
-  TERTIARY = "Tertiary"
+  Primary = "Primary",
+  Secondary = "Secondary",
+  Tertiary = "Tertiary",
 }
 
 export enum ButtonSizes {
-    NORMAL = "Normal",
-    MEDIUM = "Medium",
-    SMALL = "Small"
+  Normal = "Normal",
+  Medium = "Medium",
+  Small = "Small",
 }
 
 export enum ButtonDirections {
-    LEFT = "Left",
-    RIGHT = "Right"
+  Left = "Left",
+  Right = "Right",
 }

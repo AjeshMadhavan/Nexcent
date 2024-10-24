@@ -1,9 +1,9 @@
 <template>
   <button
     :class="[
-      'button flex gap-2 w-full justify-between',
-      getButtonVariant(),
-      getButtonSize(),
+      'button flex gap-2 justify-between w-full',
+      getButtonVariant,
+      getButtonSize,
       { 'flex-row-reverse': isIconOnLeft },
     ]"
   >
@@ -23,43 +23,44 @@ import { computed, withDefaults } from "vue";
 import { ButtonDirections, ButtonSizes, ButtonVariants } from "../Constants";
 
 type Props = {
-  variant?: string;
-  size?: string;
   iconDirection?: string;
-  label?: string;
   image?: string;
+  label?: string;
+  size?: string;
+  variant?: string;
 };
 
 const props = withDefaults(defineProps<Props>(), {
-  variant: ButtonVariants.PRIMARY,
-  size: ButtonSizes.NORMAL,
-  iconDirection: ButtonDirections.RIGHT,
+  iconDirection: ButtonDirections.Right,
+  image: "",
   label: "Label",
+  size: ButtonSizes.Normal,
+  variant: ButtonVariants.Primary,
 });
 
 const isIconOnLeft = computed(
-  () => props.iconDirection === ButtonDirections.LEFT
+  () => props.iconDirection === ButtonDirections.Left
 );
 
-const getButtonVariant = () => {
-  if (props.variant === ButtonVariants.SECONDARY) {
+const getButtonVariant = computed(() => {
+  if (props.variant === ButtonVariants.Secondary) {
     return "button--secondary";
-  } else if (props.variant === ButtonVariants.TERTIARY) {
+  } else if (props.variant === ButtonVariants.Tertiary) {
     return "button--tertiary";
   }
 
   return "button--primary";
-};
+});
 
-const getButtonSize = () => {
-  if (props.variant === ButtonSizes.MEDIUM) {
+const getButtonSize = computed(() => {
+  if (props.size === ButtonSizes.Medium) {
     return "button--medium";
-  } else if (props.variant === ButtonSizes.SMALL) {
+  } else if (props.size === ButtonSizes.Small) {
     return "button--small";
   }
 
   return "button--normal";
-};
+});
 </script>
 
 <style lang="scss" scoped>
