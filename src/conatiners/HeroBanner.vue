@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative px-2 py-24 flex items-center justify-center md:px-3 xl:px-36 xl:justify-between lg:gap-26"
+    class="relative px-2 py-24 flex items-center justify-center md:px-3 lg:gap-26 xl:px-36 xl:justify-between"
     style="background-color: rgba(245, 247, 250, 1)"
   >
     <div class="z-10 flex flex-col">
@@ -18,7 +18,9 @@
         {{ description }}
       </p>
       <!--empty wrapper to implement button-->
-      <div class="button-wrapper h-14"></div>
+      <div class="button-wrapper mx-auto mt-8 w-full md:w-96 xl:mx-0 xl:w-fit">
+        <Button :label="buttonText" />
+      </div>
     </div>
     <div
       class="absolute top-0 right-0 z-0 h-full opacity-10 xl:relative xl:h-fit xl:opacity-100"
@@ -39,8 +41,9 @@
 
 <script setup lang="ts">
 import uiData from "../data/uiData.json";
+import Button from "../components/Button.vue";
 
-const { title, description } = uiData.heroBanner;
+const { title, description, buttonText } = uiData.heroBanner;
 </script>
 
 <style scoped></style>
