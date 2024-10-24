@@ -102,9 +102,6 @@ export default {
           },
         ],
       },
-      gap: {
-        26: "104px",
-      },
       lineHeight: {
         11: "44px",
       },
@@ -119,7 +116,22 @@ export default {
       },
       gap: {
         3.5: "14px",
+        6.25: "25px",
         12.5: "50px",
+        26: "104px",
+        34: "136px",
+      },
+      spacing: {
+        288: "1152px",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translate(0)" },
+          "100%": { transform: "translate(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 5s linear infinite",
       },
     },
   },
