@@ -122,13 +122,14 @@ export default {
         34: "136px",
       },
       spacing: {
+        6.25: "25px",
         288: "1152px",
         150: "600px",
         200: "800px",
       },
       keyframes: {
         marquee: {
-          "0%": { transform: "translate(0)" },
+          "0%": { transform: "translate(100%)" },
           "100%": { transform: "translate(-100%)" },
         },
       },
