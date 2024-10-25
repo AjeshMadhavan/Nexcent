@@ -11,6 +11,18 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
+const renderStory = (args: any) => ({
+  components: { Button },
+  setup() {
+    return { args };
+  },
+  template: `
+    <div class="w-fit">
+    <Button v-bind="args" class="py-2 px-4 text-sm"/>
+    </div>
+    `,
+});
+
 export const Primary: Story = {
   args: {
     label: "Sign Up",
@@ -21,17 +33,7 @@ export const Primary: Story = {
       options: Object.values(ButtonVariants),
     },
   },
-  render: (args) => ({
-    components: { Button },
-    setup() {
-      return { args };
-    },
-    template: `
-    <div class="w-fit">
-    <Button v-bind="args" class="py-2 px-4 text-sm"/>
-    </div>
-    `,
-  }),
+  render: renderStory,
 };
 
 export const Secondary: Story = {
@@ -45,17 +47,7 @@ export const Secondary: Story = {
       options: Object.values(ButtonVariants),
     },
   },
-  render: (args) => ({
-    components: { Button },
-    setup() {
-      return { args };
-    },
-    template: `
-      <div class="w-fit">
-      <Button v-bind="args" class="py-2 px-4 text-sm"/>
-      </div>
-      `,
-  }),
+  render: renderStory,
 };
 
 export const Tertiary: Story = {
@@ -69,15 +61,5 @@ export const Tertiary: Story = {
       options: Object.values(ButtonVariants),
     },
   },
-  render: (args) => ({
-    components: { Button },
-    setup() {
-      return { args };
-    },
-    template: `
-      <div class="w-fit">
-      <Button v-bind="args" class="py-2 px-4 text-sm"/>
-      </div>
-      `,
-  }),
+  render: renderStory,
 };
