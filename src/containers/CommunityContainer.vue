@@ -46,4 +46,10 @@
 import UiData from "../data/uiData.json";
 
 const { communityDetails, description, title } = UiData.communitySection;
+<<<<<<< HEAD
 </script>
+=======
+</script>
+
+<style scoped></style>
+>>>>>>> fafba3a (feat: create community section)
