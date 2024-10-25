@@ -31,7 +31,7 @@ export default {
         success: "#2E7D31",
         warning: "#FBC02D",
         error: "#E53835",
-        "devil-grass":"#4CAF4F"
+        "devil-grass": "#4CAF4F",
       },
       fontSize: {
         "headline-1": [
@@ -102,8 +102,8 @@ export default {
         inter: "Inter",
       },
       gap: {
-        26:"104px"
-      }
+        26: "104px",
+      },
     },
   },
   plugins: [],

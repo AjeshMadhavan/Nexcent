@@ -1,14 +1,13 @@
 <template>
   <div
-    class="relative px-2 py-24 flex items-center justify-center md:px-3 lg:gap-26 xl:px-36 xl:justify-between"
-    style="background-color: rgba(245, 247, 250, 1)"
+    class="relative px-2 py-24 flex items-center justify-center bg-silver md:px-3 lg:gap-26 xl:px-36 xl:justify-between"
   >
     <div class="z-10 flex flex-col">
       <h1
         class="font-inter text-3xl text-center sm:text-4xl md:text-6xl xl:text-left xl:text-headline-1"
       >
         {{ title.text }}&nbsp;
-        <span class="xl:block text-devil-grass">
+        <span class="text-devil-grass xl:block">
           {{ title.hightlight }}
         </span>
       </h1>
