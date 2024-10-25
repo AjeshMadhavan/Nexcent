@@ -42,5 +42,3 @@ import UiData from "../data/uiData.json";
 
 const { communityDetails, description, title } = UiData.communitySection;
 </script>
-
-<style scoped></style>
