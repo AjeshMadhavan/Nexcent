@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/vue3";
 
-import Button from "../components/Button.vue";
+import Button, { Props } from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
 
 const meta: Meta<typeof Button> = {
@@ -11,7 +11,7 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-const renderStory = (args: any) => ({
+const renderStory = (args: Props) => ({
   components: { Button },
   setup() {
     return { args };
