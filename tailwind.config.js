@@ -8,6 +8,13 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        sm: "0 2px 4px rgba(171, 190, 209, 0.6)",
+        md: "0 4px 8px rgba(171, 190, 209, 0.4)",
+        lg: "0 6px 12px rgba(171, 190, 209, 0.3)",
+        xl: "0 8px 16px rgba(171, 190, 209, 0.4)",
+        "2xl": "0 16px 32px rgba(171, 190, 209, 0.3)",
+      },
       colors: {
         "neutral-black": "#263238",
         grey: "#717171",
@@ -32,6 +39,9 @@ export default {
         warning: "#FBC02D",
         error: "#E53835",
         "devil-grass": "#4CAF4F",
+      },
+      fontFamily: {
+        inter: "Inter",
       },
       fontSize: {
         "headline-1": [
@@ -91,18 +101,15 @@ export default {
           },
         ],
       },
-      boxShadow: {
-        sm: "0 2px 4px rgba(171, 190, 209, 0.6)",
-        md: "0 4px 8px rgba(171, 190, 209, 0.4)",
-        lg: "0 6px 12px rgba(171, 190, 209, 0.3)",
-        xl: "0 8px 16px rgba(171, 190, 209, 0.4)",
-        "2xl": "0 16px 32px rgba(171, 190, 209, 0.3)",
-      },
-      fontFamily: {
-        inter: "Inter",
-      },
       gap: {
         26: "104px",
+      },
+      lineHeight: {
+        11: "44px",
+      },
+      width: {
+        74.75: "299px",
+        135.5: "542px",
       },
     },
   },
