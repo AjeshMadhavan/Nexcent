@@ -40,6 +40,7 @@ export default {
         error: "#E53835",
         "devil-grass": "#4CAF4F",
         "brand-primary": "#4CAF4F",
+        "wood-smoke": "#18191F",
       },
       fontFamily: {
         inter: "Inter",
@@ -122,8 +123,11 @@ export default {
       },
       spacing: {
         6.25: "25px",
+        7.5: "30px",
         13: "52px",
+        63.75: "255px",
         125: "500px",
+        135: "540px",
         150: "600px",
         150.25: "601px",
         165.25: "661px",

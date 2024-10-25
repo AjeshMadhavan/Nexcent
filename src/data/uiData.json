@@ -77,7 +77,7 @@
   "localBusinessSection": {
     "title": {
       "text": "Helping a local",
-      "hightlight": "business reinvent itself"
+      "highlight": "business reinvent itself"
     },
     "description": "We reached here with our hard work and dedication",
     "businessDetails": [
@@ -97,7 +97,7 @@
         "description": "Event Bookings"
       },
       {
-        "image": "Purse",
+        "image": "Wallet",
         "title": "1,926,436",
         "description": "Payments"
       }
