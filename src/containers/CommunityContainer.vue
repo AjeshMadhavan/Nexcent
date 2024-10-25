@@ -12,7 +12,7 @@
       <div class="w-100 justify-around lg:flex">
         <div
           v-for="communityDetail in communityDetails"
-          class="py-8 px-4 shadow-sm flex flex-col items-center gap-4 sm:flex-row lg:w-74.75 lg:gap-0 lg:flex-col"
+          class="py-6 px-4 shadow-sm flex flex-col items-center gap-4 sm:flex-row lg:w-74.75 lg:gap-0 lg:flex-col"
         >
           <img
             class="block self-start sm:self-center"
@@ -21,12 +21,12 @@
           />
           <div>
             <h2
-              class="font-inter text-left text-headline-4 sm:text-headline-3 lg:text-center lg:px-3 lg:mt-4"
+              class="font-inter text-left text-headline-4 text-d-grey sm:text-headline-3 lg:text-center lg:px-3 lg:mt-4"
             >
               {{ communityDetail.title }}
             </h2>
             <p
-              class="font-inter text-left text-body-3 mt-2 sm:text-body-3 lg:mx-2 lg:text-center"
+              class="font-inter text-left text-body-3 text-grey mt-2 sm:text-body-3 lg:mx-2 lg:text-center"
             >
               {{ communityDetail.description }}
             </p>
