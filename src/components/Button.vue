@@ -22,7 +22,7 @@ import { computed, withDefaults } from "vue";
 
 import { ButtonDirections, ButtonSizes, ButtonVariants } from "../Constants";
 
-type Props = {
+export type Props = {
   iconDirection?: string;
   image?: string;
   label?: string;
