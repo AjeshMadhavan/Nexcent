@@ -91,6 +91,16 @@ export default {
           },
         ],
       },
+      fontFamily: {
+        inter: "Inter",
+      },
+      lineHeight: {
+        11: "44px",
+      },
+      width: {
+        135.5: "542px",
+        74.75: "299px",
+      },
       boxShadow: {
         sm: "0 2px 4px rgba(171, 190, 209, 0.6)",
         md: "0 4px 8px rgba(171, 190, 209, 0.4)",
