@@ -39,6 +39,7 @@ export default {
         warning: "#FBC02D",
         error: "#E53835",
         "devil-grass": "#4CAF4F",
+        "brand-primary": "#4CAF4F",
       },
       fontFamily: {
         inter: "Inter",
@@ -110,6 +111,15 @@ export default {
       width: {
         74.75: "299px",
         135.5: "542px",
+      },
+      padding: {
+        5.5: "22px",
+        26.25: "105px",
+        30: "120px",
+      },
+      gap: {
+        3.5: "14px",
+        12.5: "50px",
       },
     },
   },
