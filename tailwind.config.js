@@ -41,6 +41,7 @@ export default {
         "devil-grass": "#4CAF4F",
         "brand-primary": "#4CAF4F",
         "wood-smoke": "#18191F",
+        bigfish: "#D9DBE1",
       },
       fontFamily: {
         inter: "Inter",
@@ -109,13 +110,21 @@ export default {
       lineHeight: {
         11: "44px",
       },
+      spacing: {
+        2.25: "9px",
+        2.75: "11px",
+        7.5: "30px",
+        41.25: "165px",
+      },
       width: {
         10.25: "41px",
         19.5: "78px",
         26: "104px",
+        56.25: "225px",
         74.75: "299px",
         81.5: "326px",
         135.5: "542px",
+        221.75: "887px",
       },
       padding: {
         5.5: "22px",
