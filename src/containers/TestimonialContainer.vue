@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-8 flex px-5 gap-5 text-center bg-silver lg:text-left lg:px-16 xl:gap-19.5 xl:px-36"
+    class="py-8 px-5 flex gap-5 text-center bg-silver lg:text-left lg:px-16 xl:gap-19.5 xl:px-36"
   >
     <img
       class="hidden w-81.5 aspect-square object-cover xl:block"
@@ -9,7 +9,9 @@
     />
     <div class="font-inter flex flex-col h-full overflow-hidden">
       <p class="text-body-2 text-grey">{{ testimony }}</p>
-      <span class="block mt-4 text-devil-grass text-headline-4">{{ name }}</span>
+      <span class="block mt-4 text-devil-grass text-headline-4">
+      {{ name }}
+      </span>
       <span class="block mt-2 text-body-2 text-l-grey">{{ organisation }}</span>
       <div
         class="relative block items-center justify-between mt-8 gap-8 h-full md:flex"
