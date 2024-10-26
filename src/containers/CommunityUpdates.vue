@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white mx-4 font-inter md:mx-12 lg:mx-16 xl:mx-auto xl:w-360">
+  <div class="bg-white mx-6 font-inter md:mx-8 lg:mx-13 xl:mx-auto xl:max-w-360">
     <div class="flex flex-col items-center gap-4">
       <div class="flex flex-col items-center gap-2 max-w-277.5">
         <h2 class="text-headline-2 text-d-grey text-center">

@@ -22,7 +22,12 @@
         :button-text="footerDesignSection.buttonText"
         :image="MobileLoginPanel"
       />
+      <testimonial-container />
+      <div class="pb-43.65">
+        <community-updates />
+      </div>
     </div>
+    <footer-container />
   </div>
 </template>
 
@@ -36,4 +41,7 @@ import Achievements from "../containers/Achievements.vue";
 import { pixelGradeSection, footerDesignSection } from "../data/uiData.json";
 import MobileLogin from "../assets/MobileLogin.svg";
 import MobileLoginPanel from "../assets/MobileLoginPanel.svg";
+import TestimonialContainer from "../containers/TestimonialContainer.vue";
+import CommunityUpdates from "../containers/CommunityUpdates.vue";
+import FooterContainer from "../containers/FooterContainer.vue";
 </script>

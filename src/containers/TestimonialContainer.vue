@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-8 px-5 flex gap-5 text-center bg-silver lg:text-left lg:px-16 xl:gap-19.5 xl:px-36"
+    class="py-8 px-6 flex gap-5 text-center bg-silver md:px-8 lg:text-left lg:px-13 xl:gap-19.5 xl:px-36"
   >
     <img
       class="hidden w-81.5 aspect-square object-cover xl:block"
@@ -8,7 +8,7 @@
       alt="testimony image"
     />
     <div class="font-inter flex flex-col h-full overflow-hidden">
-      <p class="text-body-2 text-grey">{{ testimony }}</p>
+      <p class="text-body-2 text-grey text-left md:text-center">{{ testimony }}</p>
       <span class="block mt-4 text-devil-grass text-headline-4">
       {{ name }}
       </span>
@@ -20,6 +20,7 @@
           <div class="flex items-center gap-10.25">
             <img
               v-for="customer in customers"
+              :key="customer.image"
               class="block w-12 aspect-square"
               :src="`/src/assets/${customer.image}.svg`"
               alt="customer-logo"

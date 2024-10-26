@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-6 md:mx-8 lg:mx-13 xl:mx-auto xl:w-360">
+  <div class="mx-6 md:mx-8 lg:mx-13 xl:mx-auto xl:max-w-360">
     <div
       class="w-full flex flex-col gap-5 py-2.5 relative md:py-6 lg:py-10 xl:py-13 xl:px-36 xl:bg-transparent xl:gap-0 xl:flex-row xl:items-center xl:justify-between"
     >
