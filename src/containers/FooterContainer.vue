@@ -30,7 +30,7 @@
             v-for="copyright in copyrignts"
             class="block text-body-3 text-silver"
           >
-          {{ copyright }}
+            {{ copyright }}
           </span>
         </div>
         <div class="flex gap-x-4">
@@ -45,10 +45,13 @@
         <div
           class="flex flex-col justify-between gap-x-7.5 gap-y-10 w-full sm:flex-row md:justify-normal lg:w-fit"
         >
-          <div class="w-full lg:w-40" v-for="item in footerNavItems.navLinks">
-            <h2 class="text-headline-4">{{ item.title }}</h2>
+          <div
+            class="w-full lg:w-40"
+            v-for="navLinkItem in footerNavItems.navLinks"
+          >
+            <h2 class="text-headline-4">{{ navLinkItem.title }}</h2>
             <div class="flex flex-col gap-y-3 text-body-3 mt-6">
-              <div v-for="link in item.links">{{ link }}</div>
+              <div v-for="link in navLinkItem.links">{{ link }}</div>
             </div>
           </div>
         </div>
