@@ -13,7 +13,7 @@
         {{ link }}
       </a>
     </div>
-    <div class="flex items-center gap-3.5">
+    <div class="items-center gap-3.5 hidden md:flex">
       <div>
         <Button
           :label="header.buttonTexts.login"
@@ -28,6 +28,13 @@
         />
       </div>
     </div>
+    <div class="block md:hidden">
+      <Button
+        class="menu-icon"
+        image="src/assets/Bars.svg"
+        @click="handleMenuClick"
+      />
+    </div>
   </div>
 </template>
 
@@ -38,6 +45,14 @@ import Button from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
 
 const LOGO_ALT_TEXT = "Nexcent Logo";
+
+const emit = defineEmits<{
+  (event: "menu-click", clickEvent: Event): void;
+}>();
+
+const handleMenuClick = (event: Event) => {
+  emit("menu-click", event);
+};
 </script>
 
 <style lang="scss" scoped>
@@ -47,5 +62,9 @@ const LOGO_ALT_TEXT = "Nexcent Logo";
 
 .signup-button {
   border-radius: 6px;
+}
+
+.menu-icon {
+  color: black;
 }
 </style>
