@@ -27,14 +27,19 @@
         />
         <div class="flex flex-col gap-y-2">
           <span
-            v-for="copyright in copyrignts"
+            v-for="(copyright, index) in copyrights"
+            :key="`${copyright}${index}`"
             class="block text-body-3 text-silver"
           >
             {{ copyright }}
           </span>
         </div>
         <div class="flex gap-x-4">
-          <div v-for="icon in socialMediaIcons" class="w-fit">
+          <div
+            v-for="(icon, index) in socialMediaIcons"
+            class="w-fit"
+            :key="`${icon}${index}`"
+          >
             <Button :image="`src/assets/${icon}.svg`" class="icon" />
           </div>
         </div>
@@ -47,22 +52,33 @@
         >
           <div
             class="w-full lg:w-40"
-            v-for="navLinkItem in footerNavItems.navLinks"
+            v-for="(navLinkItem, index) in footerNavItems.navLinks"
+            :key="`${navLinkItem.title}${index}`"
           >
             <h2 class="text-headline-4">{{ navLinkItem.title }}</h2>
             <div class="flex flex-col gap-y-3 text-body-3 mt-6">
-              <div v-for="link in navLinkItem.links">{{ link }}</div>
+              <div
+                v-for="(link, index) in navLinkItem.links"
+                :key="`${link}${index}`"
+              >
+                {{ link }}
+              </div>
             </div>
           </div>
         </div>
-        <div class="w-56.25">
+        <div class="w-full lg:w-56.25">
           <h2 class="text-headline-4">{{ footerNavItems.inputItem.title }}</h2>
-          <div class="mt-6">
-            <input
-              :placeholder="footerNavItems.inputItem.placeholder"
-              class="block w-full rounded-lg bg-grey outline-none pt-2.25 pr-2.75 pb-2.75 pl-3 placeholder:text-bigfish placeholder:text-body-3"
-              type="text"
-            />
+          <div class="w-full mt-6 sm:w-3/5 lg:w-full">
+            <div
+              class="flex items-center gap-x-1 w-full bg-grey pt-2.25 pr-2.75 pb-2.75 pl-3 rounded-lg"
+            >
+              <input
+                :placeholder="footerNavItems.inputItem.placeholder"
+                class="block w-full outline-none bg-transparent font-inter text-body-3 placeholder:text-bigfish placeholder:text-body-3"
+                type="text"
+              />
+              <img src="../assets/Send.svg" alt="footer-send-icon" />
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +91,7 @@ import Button from "../components/Button.vue";
 import uiData from "../data/uiData.json";
 
 const { buttonText, title } = uiData.demoSection;
-const { copyrignts, footerNavItems, socialMediaIcons } = uiData.footerSection;
+const { copyrights, footerNavItems, socialMediaIcons } = uiData.footerSection;
 </script>
 
 <style scoped>

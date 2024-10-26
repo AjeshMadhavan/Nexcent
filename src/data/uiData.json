@@ -157,13 +157,27 @@
     "buttonText": "Get a Demo"
   },
   "footerSection": {
-    "copyrignts": ["Copyright © 2020 Nexcent ltd.", "All rights reserved"],
-    "socialMediaIcons": ["Instagram", "Ball", "Twitter", "Youtube"],
+    "copyrights": [
+      "Copyright © 2020 Nexcent ltd.",
+      "All rights reserved"
+    ],
+    "socialMediaIcons": [
+      "Instagram",
+      "Ball",
+      "Twitter",
+      "Youtube"
+    ],
     "footerNavItems": {
       "navLinks": [
         {
           "title": "Company",
-          "links": ["About us", "Blog", "Contact us", "Pricing", "Testimonials"]
+          "links": [
+            "About us",
+            "Blog",
+            "Contact us",
+            "Pricing",
+            "Testimonials"
+          ]
         },
         {
           "title": "Support",
