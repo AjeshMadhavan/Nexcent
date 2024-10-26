@@ -14,15 +14,19 @@
       </a>
     </div>
     <div class="flex items-center gap-3.5">
-      <Button
-        :label="header.buttonTexts.login"
-        :variant="ButtonVariants.Tertiary"
-        class="p-2 text-body-3 font-medium w-fit login-button md:py-2.5 md:px-5"
-      />
-      <Button
-        :label="header.buttonTexts.signup"
-        class="p-2 text-body-3 font-medium w-fit signup-button md:py-2.5 md:px-5"
-      />
+      <div>
+        <Button
+          :label="header.buttonTexts.login"
+          :variant="ButtonVariants.Tertiary"
+          class="p-2 text-body-3 font-medium w-fit login-button md:py-2.5 md:px-5"
+        />
+      </div>
+      <div>
+        <Button
+          :label="header.buttonTexts.signup"
+          class="p-2 text-body-3 font-medium w-fit signup-button md:py-2.5 md:px-5"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -33,7 +37,7 @@ import { header } from "../data/uiData.json";
 import Button from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
 
-const LOGO_ALT_TEXT = "Nexcent Logo"
+const LOGO_ALT_TEXT = "Nexcent Logo";
 </script>
 
 <style lang="scss" scoped>

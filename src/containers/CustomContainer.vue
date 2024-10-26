@@ -1,11 +1,11 @@
 <template>
-  <div class="mx-4 md:mx-12 lg:mx-16 xl:mx-auto xl:w-360">
+  <div class="mx-6 md:mx-8 lg:mx-13 xl:mx-auto xl:w-360">
     <div
-      class="w-full flex flex-col gap-5 py-2.5 px-2.5 relative md:bg-white/70 md:py-6 md:px-14 lg:py-10 lg:px-28 xl:py-13 xl:px-36 xl:bg-transparent xl:gap-0 xl:flex-row xl:items-center xl:justify-between"
+      class="w-full flex flex-col gap-5 py-2.5 relative md:py-6 lg:py-10 xl:py-13 xl:px-36 xl:bg-transparent xl:gap-0 xl:flex-row xl:items-center xl:justify-between"
     >
       <img
         :src="props.image"
-        class="md:absolute md:bg-white md:right-0 md:top-0 md:-z-50 xl:static"
+        class="md:absolute md:bg-white md:opacity-50 md:right-0 md:top-0 md:-z-50 xl:static xl:opacity-100"
       />
       <div
         class="flex flex-col items-start gap-8 md:w-125 lg:w-150.25 xl:w-165.25"

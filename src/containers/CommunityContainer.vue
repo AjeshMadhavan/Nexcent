@@ -8,12 +8,12 @@
     <p class="mt-2 font-inter text-center text-xs sm:text-body-2">
       {{ description }}
     </p>
-    <div class="mt-4 py-2.5 px-3 2xl:px-36">
-      <div class="w-100 lg:flex lg:justify-around">
+    <div class="mt-4 py-2.5 px-3 xl:px-36">
+      <div class="w-100 flex items-center flex-col gap-y-5 lg:flex-row lg:justify-between">
         <div
           v-for="communityDetail in communityDetails"
           :key="communityDetail.title"
-          class="py-6 px-4 shadow-sm flex flex-col items-center gap-4 sm:flex-row lg:w-74.75 lg:gap-0 lg:flex-col"
+          class="py-6 px-4 shadow-sm flex flex-col items-center gap-4 w-full sm:flex-row lg:w-74.75 lg:gap-0 lg:flex-col"
         >
           <img
             class="block self-start sm:self-center"

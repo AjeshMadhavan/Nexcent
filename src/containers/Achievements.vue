@@ -1,8 +1,8 @@
 <template>
   <div class="bg-silver">
-    <div class="bg-silver xl:w-360 xl:mx-auto">
+    <div class="xl:w-360 xl:mx-auto">
       <div
-        class="flex flex-col items-center justify-between gap-5 py-8 px-6 md:px-14 lg:flex-row lg:px-24 xl:px-36 xl:py-16"
+        class="flex flex-col items-center justify-between gap-5 py-8 px-6 md:px-8 lg:flex-row lg:px-13 xl:px-36 xl:py-16"
       >
         <div
           class="flex flex-col gap-2 w-full lg:w-1/2 xl:w-auto xl:min-w-135 xl:items-start"
