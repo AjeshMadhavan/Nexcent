@@ -5,10 +5,10 @@
       <p class="text-body-2 text-grey">{{ clientsSection.description }}</p>
     </div>
     <div
-      class="mx-2.5 overflow-hidden md:min-w-150 md:mx-auto lg:min-w-200 xl:min-w-288"
+      class="overflow-hidden min-w-full px-3 xl:px-0 xl:mx-auto xl:min-w-288"
     >
       <div
-        class="flex items-center justify-center flex-wrap gap-5 py-6.25 min-w-full md:gap-16 md:flex-nowrap"
+        class="flex items-center justify-center flex-wrap gap-5 py-6.25 min-w-full sm:justify-between md:flex-nowrap lg:gap-16"
       >
         <img
           v-for="client in clientsSection.clients"

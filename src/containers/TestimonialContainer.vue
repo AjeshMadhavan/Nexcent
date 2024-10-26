@@ -1,38 +1,39 @@
 <template>
   <div
-    class="py-8 px-5 flex gap-5 text-center bg-silver lg:text-left lg:px-16 xl:gap-19.5 xl:px-36"
+    class="py-8 px-6 flex gap-5 text-center bg-silver md:px-8 lg:text-left lg:px-13 xl:gap-19.5 xl:px-36 xl:max-w-360 xl:mx-auto"
   >
     <img
-      class="hidden w-81.5 aspect-square object-cover xl:block"
+      class="hidden w-81.5 aspect-square rounded-lg object-cover xl:block"
       src="../assets/Tesla.jpeg"
       alt="testimony image"
     />
     <div class="font-inter flex flex-col h-full overflow-hidden">
-      <p class="text-body-2 text-grey">{{ testimony }}</p>
+      <p class="text-body-2 text-grey text-left md:text-center lg:text-left">
+        {{ testimony }}
+      </p>
       <span class="block mt-4 text-devil-grass text-headline-4">
-      {{ name }}
+        {{ name }}
       </span>
       <span class="block mt-2 text-body-2 text-l-grey">{{ organisation }}</span>
       <div
-        class="relative block items-center justify-between mt-8 gap-8 h-full md:flex"
+        class="relative block items-center justify-between mt-8 gap-8 h-full md:flex md:flex-wrap"
       >
-        <div class="icons-wrapper overflow-auto w-full">
+        <div class="icons-wrapper overflow-auto">
           <div class="flex items-center gap-10.25">
             <img
               v-for="customer in customers"
+              :key="customer.image"
               class="block w-12 aspect-square"
               :src="`/src/assets/${customer.image}.svg`"
               alt="customer-logo"
             />
           </div>
         </div>
-        <div
-          class="relative right-0.5 w-fit pl-0 mt-2 h-full bg-silver md:pl-0 md:mt-0 md:absolute"
-        >
+        <div class="w-fit h-full mt-2 bg-silver md:mt-0">
           <Button
             :variant="ButtonVariants.Tertiary"
             :label="meetLink"
-            image="/src/assets/Right.svg"
+            image="/src/assets/RightArrow.svg"
             class="custom-button"
           />
         </div>
