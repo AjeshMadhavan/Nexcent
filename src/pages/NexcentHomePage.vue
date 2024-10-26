@@ -1,7 +1,7 @@
 <template>
-  <div class="relative overflow-hidden">
+  <div :class="['relative overflow-hidden', { 'h-lvh': isMenuVisible }]">
     <div
-      class="block absolute top-[76px] h-full w-full bg-white z-20 transition-all duration-700 md:hidden"
+      class="block absolute top-19 w-full h-full bg-white z-20 transition-all duration-700 md:hidden"
       :style="{ right: isMenuVisible ? TRANSITION_AFTER : TRANSITION_BEFORE }"
     >
       <mobile-menu @click="handleLinkClick" />
@@ -68,8 +68,6 @@ const handleMenuClick = () => {
 };
 
 const handleLinkClick = () => {
-  console.log("Click working");
   isMenuVisible.value = false;
-  console.log(isMenuVisible.value);
 };
 </script>
