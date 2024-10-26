@@ -103,11 +103,18 @@ export default {
           },
         ],
       },
+      height: {
+        81.5: "326px",
+      },
       lineHeight: {
         11: "44px",
       },
       width: {
+        10.25: "41px",
+        19.5: "78px",
+        26: "104px",
         74.75: "299px",
+        81.5: "326px",
         135.5: "542px",
       },
       padding: {
