@@ -12,6 +12,7 @@
       <div class="w-100 lg:flex lg:justify-around">
         <div
           v-for="communityDetail in communityDetails"
+          :key="communityDetail.title"
           class="py-6 px-4 shadow-sm flex flex-col items-center gap-4 sm:flex-row lg:w-74.75 lg:gap-0 lg:flex-col"
         >
           <img
