@@ -6,7 +6,10 @@
     >
       <mobile-menu @click="handleLinkClick" />
     </div>
-    <header-section @menu-click="handleMenuClick" />
+    <header-section
+      @menu-click="handleMenuClick"
+      :is-menu-visible="isMenuVisible"
+    />
     <div class="flex flex-col gap-10">
       <div class="bg-silver px-4 md:px-5 lg:px-10 xl:px-0">
         <hero-banner />

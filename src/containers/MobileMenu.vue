@@ -2,7 +2,8 @@
   <div>
     <div class="w-full flex flex-col px-2">
       <a
-        v-for="link in navbarLinks"
+        v-for="(link, index) in navbarLinks"
+        :key="`${link}${index}`"
         role="button"
         class="block py-2.5 px-6 border-b hover:bg-devil-grass hover:text-white"
         @click="handleClick"

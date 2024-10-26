@@ -31,7 +31,7 @@
     <div class="block md:hidden">
       <Button
         class="menu-icon"
-        :image="`src/assets/${isMenuClicked ? 'Close' : 'Bars'}.svg`"
+        :image="`src/assets/${isMenuVisible ? 'Close' : 'Bars'}.svg`"
         @click="handleMenuClick"
       />
     </div>
@@ -43,18 +43,20 @@ import Nexcent from "../assets/logo/Nexcent.svg";
 import { header } from "../data/uiData.json";
 import Button from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
-import { ref } from "vue";
+
+type Props = {
+  isMenuVisible: boolean;
+};
+
+defineProps<Props>();
 
 const LOGO_ALT_TEXT = "Nexcent Logo";
-
-const isMenuClicked = ref<boolean>(false);
 
 const emit = defineEmits<{
   (event: "menu-click", clickEvent: Event): void;
 }>();
 
 const handleMenuClick = (event: Event) => {
-  isMenuClicked.value = !isMenuClicked.value;
   emit("menu-click", event);
 };
 </script>
