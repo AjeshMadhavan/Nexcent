@@ -22,7 +22,9 @@
         :button-text="footerDesignSection.buttonText"
         :image="MobileLoginPanel"
       />
-      <testimonial-container />
+      <div class="bg-silver">
+        <testimonial-container />
+      </div>
       <div class="pb-43.65">
         <community-updates />
       </div>
@@ -38,10 +40,11 @@ import ClientSection from "../containers/ClientSection.vue";
 import CommunityContainer from "../containers/CommunityContainer.vue";
 import CustomContainer from "../containers/CustomContainer.vue";
 import Achievements from "../containers/Achievements.vue";
-import { pixelGradeSection, footerDesignSection } from "../data/uiData.json";
-import MobileLogin from "../assets/MobileLogin.svg";
-import MobileLoginPanel from "../assets/MobileLoginPanel.svg";
 import TestimonialContainer from "../containers/TestimonialContainer.vue";
 import CommunityUpdates from "../containers/CommunityUpdates.vue";
 import FooterContainer from "../containers/FooterContainer.vue";
+
+import MobileLogin from "../assets/MobileLogin.svg";
+import MobileLoginPanel from "../assets/MobileLoginPanel.svg";
+import { pixelGradeSection, footerDesignSection } from "../data/uiData.json";
 </script>

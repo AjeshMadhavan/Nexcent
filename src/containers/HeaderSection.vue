@@ -24,7 +24,7 @@
       <div>
         <Button
           :label="header.buttonTexts.signup"
-          class="p-2 text-body-3 font-medium w-fit signup-button md:py-2.5 md:px-5"
+          class="p-2 text-body-4 font-medium w-fit signup-button md:py-2.5 md:px-5 md:text-body-3"
         />
       </div>
     </div>
