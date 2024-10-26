@@ -13,8 +13,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "npm": "^5.10.0",
-    "vue": "^3.5.12"
+    "npm": "^5.10.0",    
+    "vue": "^3.5.12",
+    "vue3-marquee": "^4.2.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
