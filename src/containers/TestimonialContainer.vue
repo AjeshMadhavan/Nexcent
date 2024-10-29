@@ -24,7 +24,7 @@
               v-for="customer in customers"
               :key="customer.image"
               class="block w-12 aspect-square"
-              :src="`/src/assets/${customer.image}.svg`"
+              :src="`./assets/${customer.image}.svg`"
               alt="customer-logo"
             />
           </div>
@@ -33,7 +33,7 @@
           <Button
             :variant="ButtonVariants.Tertiary"
             :label="meetLink"
-            image="/src/assets/RightArrow.svg"
+            image="./assets/RightArrow.svg"
             class="custom-button"
           />
         </div>

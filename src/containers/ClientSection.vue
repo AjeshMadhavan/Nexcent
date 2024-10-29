@@ -13,7 +13,7 @@
         <img
           v-for="client in clientsSection.clients"
           :key="client.image"
-          :src="`/src/assets/Company/${client.image}.svg`"
+          :src="`./assets/Company/${client.image}.svg`"
         />
       </div>
     </div>
