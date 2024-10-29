@@ -18,7 +18,7 @@
           :key="card.image"
         >
           <img
-            :src="`/src/assets/${card.image}.svg`"
+            :src="`./assets/${card.image}.svg`"
             :alt="COMMUNITY_CARD_IMG_ALT"
           />
           <div

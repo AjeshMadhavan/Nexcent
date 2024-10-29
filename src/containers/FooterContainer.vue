@@ -10,7 +10,7 @@
         <div class="w-fit">
           <Button
             :label="buttonText"
-            image="src/assets/DemoButtonArrow.svg"
+            image="./assets/DemoButtonArrow.svg"
             class="custom-button"
           />
         </div>
@@ -40,7 +40,7 @@
             class="w-fit"
             :key="`${icon}${index}`"
           >
-            <Button :image="`src/assets/${icon}.svg`" class="icon" />
+            <Button :image="`./assets/${icon}.svg`" class="icon" />
           </div>
         </div>
       </div>

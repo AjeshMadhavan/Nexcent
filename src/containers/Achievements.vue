@@ -25,7 +25,7 @@
             :key="details.image"
             class="flex gap-4 items-center w-56 xl:w-63.75"
           >
-            <img :src="`/src/assets/${details.image}.svg`" />
+            <img :src="`./assets/${details.image}.svg`" />
             <div>
               <h3 class="text-headline-3 font-bold text-d-grey">
                 {{ details.title }}
