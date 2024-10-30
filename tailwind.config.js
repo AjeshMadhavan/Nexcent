@@ -104,6 +104,7 @@ export default {
           },
         ],
       },
+<<<<<<< HEAD
       height: {
         81.5: "326px",
       },
@@ -162,6 +163,14 @@ export default {
       },
       animation: {
         marquee: "marquee 5s linear infinite",
+=======
+      boxShadow: {
+        sm: "0 2px 4px #ABBED199",
+        md: "0 4px 8px #ABBED166",
+        lg: "0 6px 12px #ABBED14D",
+        xl: "0 8px 16px #ABBED166",
+        "2xl": "0 16px 32px #ABBED14D",
+>>>>>>> 13988b8 (refactor: changes box-shadow color from rgb to hex)
       },
     },
   },
