@@ -9,15 +9,15 @@
         <Vue3Marquee :duration="MARQUEE_DURATION">
           <img
             v-for="client in clientsSection.clients"
-            :key="client.image"
-            :src="client.image"
+            :key="client.clientCompanyLogo"
+            :src="client.clientCompanyLogo"
             :alt="CLIENT_COMPANY_LOGO_ALT_TEXT"
             class="pr-2 md:pr-5 lg:pr-8 xl:pr-10"
           />
           <img
             v-for="client in clientsSection.clients"
-            :key="client.image"
-            :src="client.image"
+            :key="client.clientCompanyLogo"
+            :src="client.clientCompanyLogo"
             :alt="CLIENT_COMPANY_LOGO_ALT_TEXT"
             class="pr-2 md:pr-5 lg:pr-8 xl:pr-10"
           />
