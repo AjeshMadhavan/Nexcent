@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:max-w-360 xl:mx-auto">
+  <div class="w-full xl:max-w-360 xl:mx-auto">
     <div class="w-full xl:px-36">
       <h2
         class="font-inter text-center text-d-grey tracking-tight text-headline-4 mx-auto lg:text-headline-2 lg:w-135.5"
