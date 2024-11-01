@@ -13,7 +13,7 @@
         {{ link }}
       </a>
     </div>
-    <div class="items-center gap-3.5 hidden md:flex">
+    <div class="hidden md:flex md:items-center md:gap-3.5">
       <div>
         <Button
           :label="header.buttonTexts.login"
@@ -28,7 +28,7 @@
         />
       </div>
     </div>
-    <div class="block md:hidden">
+    <div class="md:hidden">
       <Button
         class="menu-icon"
         :image="`src/assets/${isMenuVisible ? 'Close' : 'Bars'}.svg`"
