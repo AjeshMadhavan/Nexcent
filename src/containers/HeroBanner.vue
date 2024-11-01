@@ -55,9 +55,10 @@
 </template>
 
 <script setup lang="ts">
+import { computed, onMounted, ref } from "vue";
+
 import uiData from "../data/uiData.json";
 import Button from "../components/Button.vue";
-import { computed, onMounted, ref } from "vue";
 
 const { title, description, buttonText } = uiData.heroBanner;
 
