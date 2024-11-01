@@ -102,7 +102,8 @@ const onClick = (event: Event) => {
       outline: 2px solid #717171;
     }
 
-    &:active {
+    &:active,
+    &:hover {
       background-color: #388e3b;
     }
 

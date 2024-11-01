@@ -94,12 +94,18 @@ const { buttonText, title } = uiData.demoSection;
 const { copyrights, footerNavItems, socialMediaIcons } = uiData.footerSection;
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .custom-button {
   padding: 14px 32px;
 }
 
 .icon {
   background-color: transparent;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    outline: none;
+  }
 }
 </style>
