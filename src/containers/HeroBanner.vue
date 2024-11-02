@@ -12,7 +12,7 @@
         <h1
           class="font-inter text-3xl text-center sm:text-4xl md:text-6xl xl:text-left xl:text-headline-1"
         >
-          {{ title.text }}&nbsp;
+          {{ title.text }}
           <span class="text-devil-grass xl:block">
             {{ title.hightlight }}
           </span>
@@ -73,7 +73,7 @@ const carousalStyle = computed(() => {
   };
 });
 
-const startCarousalInterval = () => {
+const initiateCarousal = () => {
   setInterval(() => {
     if (activeCarousalItemIndex.value + 1 === CAROUSAL_ITEMS_LENGTH) {
       activeCarousalItemIndex.value = 0;
@@ -84,7 +84,7 @@ const startCarousalInterval = () => {
 };
 
 onMounted(() => {
-  startCarousalInterval();
+  initiateCarousal();
 });
 </script>
 
