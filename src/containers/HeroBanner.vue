@@ -4,9 +4,9 @@
   >
     <div class="flex overflow-hidden">
       <div
-        class="z-10 flex flex-col min-w-full transition-transform duration-1000 px-10 select-none"
-        v-for="carousalItem in CAROUSAL_ITEMS_LENGTH"
+        v-for="carousalItem in CAROUSAL_ITEMS_LENGTH + 1"
         :key="carousalItem"
+        class="z-10 flex flex-col min-w-full transition-transform duration-1000 px-10 select-none"
         :style="carousalStyle"
       >
         <h1
@@ -45,8 +45,8 @@
         :class="[
           'w-2.5 h-2.5 rounded-full transition-colors duration-500',
           {
-            'bg-devil-grass': index === activeCarousalItemIndex,
-            'bg-devil-grass/30': index != activeCarousalItemIndex,
+            'bg-devil-grass': activeCarousalBadge(index),
+            'bg-devil-grass/30': !activeCarousalBadge(index),
           },
         ]"
       />
@@ -62,25 +62,43 @@ import Button from "../components/Button.vue";
 
 const { title, description, buttonText } = uiData.heroBanner;
 
-const activeCarousalItemIndex = ref<number>(0);
-
 const CAROUSAL_ITEMS_LENGTH = 3;
-const CAROUSAL_CHANGE_INTERVAL = 3000;
+const CAROUSAL_CHANGE_INTERVAL_IN_MS = 2000;
+const CAROUSAL_TRANSITION_DURATION_IN_MS = 1000;
+const CAROUSAL_TRANSITION_STYLE = `transform ${CAROUSAL_TRANSITION_DURATION_IN_MS}ms ease`;
+const CAROUSAL_TRANSITION_INITIAL_STYLE = "none";
+const INITIAL_CAROUSAL_ITEM_INDEX = 0;
+
+const activeCarousalItemIndex = ref<number>(INITIAL_CAROUSAL_ITEM_INDEX);
+const carousalTransitionStyle = ref<string>(CAROUSAL_TRANSITION_INITIAL_STYLE);
 
 const carousalStyle = computed(() => {
   return {
+    transition: carousalTransitionStyle.value,
     transform: `translateX(-${activeCarousalItemIndex.value * 100}%)`,
   };
 });
 
+const activeCarousalBadge = (index: number) => {
+  return (
+    index === activeCarousalItemIndex.value ||
+    (activeCarousalItemIndex.value === CAROUSAL_ITEMS_LENGTH &&
+      index === INITIAL_CAROUSAL_ITEM_INDEX)
+  );
+};
+
 const initiateCarousal = () => {
   setInterval(() => {
-    if (activeCarousalItemIndex.value + 1 === CAROUSAL_ITEMS_LENGTH) {
-      activeCarousalItemIndex.value = 0;
-    } else {
-      activeCarousalItemIndex.value += 1;
+    activeCarousalItemIndex.value += 1;
+    carousalTransitionStyle.value = CAROUSAL_TRANSITION_STYLE;
+
+    if (activeCarousalItemIndex.value === CAROUSAL_ITEMS_LENGTH) {
+      setTimeout(() => {
+        activeCarousalItemIndex.value = INITIAL_CAROUSAL_ITEM_INDEX;
+        carousalTransitionStyle.value = CAROUSAL_TRANSITION_INITIAL_STYLE;
+      }, CAROUSAL_TRANSITION_DURATION_IN_MS);
     }
-  }, CAROUSAL_CHANGE_INTERVAL);
+  }, CAROUSAL_CHANGE_INTERVAL_IN_MS);
 };
 
 onMounted(() => {
