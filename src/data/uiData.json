@@ -26,25 +26,22 @@
     "description": "We have been working with some Fortune 500+ clients",
     "clients": [
       {
-        "image": "Company1"
+        "clientCompanyLogo": "https://svgshare.com/i/1C7o.svg"
       },
       {
-        "image": "Company2"
+        "clientCompanyLogo": "https://svgshare.com/i/1C6T.svg"
       },
       {
-        "image": "Company3"
+        "clientCompanyLogo": "https://svgshare.com/i/1C6z.svg"
       },
       {
-        "image": "Company4"
+        "clientCompanyLogo": "https://svgshare.com/i/1C7z.svg"
       },
       {
-        "image": "Company5"
+        "clientCompanyLogo": "https://svgshare.com/i/1C7p.svg"
       },
       {
-        "image": "Company6"
-      },
-      {
-        "image": "Company3"
+        "clientCompanyLogo": "https://svgshare.com/i/1C6F.svg"
       }
     ]
   },

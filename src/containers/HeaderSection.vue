@@ -13,7 +13,7 @@
         {{ link }}
       </a>
     </div>
-    <div class="flex items-center gap-3.5">
+    <div class="hidden md:flex md:items-center md:gap-3.5">
       <div>
         <Button
           :label="header.buttonTexts.login"
@@ -28,16 +28,39 @@
         />
       </div>
     </div>
+    <div class="md:hidden">
+      <Button
+        class="menu-icon"
+        :image="isMenuVisible ? Close : Bars"
+        @click="handleMenuClick"
+      />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import Nexcent from "../assets/logo/Nexcent.svg";
+import Close from "../assets/Close.svg";
+import Bars from "../assets/Bars.svg";
 import { header } from "../data/uiData.json";
 import Button from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
 
+type Props = {
+  isMenuVisible: boolean;
+};
+
+defineProps<Props>();
+
 const LOGO_ALT_TEXT = "Nexcent Logo";
+
+const emit = defineEmits<{
+  (event: "menu-click", clickEvent: Event): void;
+}>();
+
+const handleMenuClick = (event: Event) => {
+  emit("menu-click", event);
+};
 </script>
 
 <style lang="scss" scoped>
@@ -47,5 +70,9 @@ const LOGO_ALT_TEXT = "Nexcent Logo";
 
 .signup-button {
   border-radius: 6px;
+}
+
+.menu-icon {
+  color: black;
 }
 </style>

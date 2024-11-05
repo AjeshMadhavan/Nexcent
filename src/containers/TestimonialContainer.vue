@@ -29,7 +29,7 @@
             />
           </div>
         </div>
-        <div class="w-fit h-full mt-2 bg-silver md:mt-0">
+        <div class="w-fit h-full mt-2 bg-silver mr-0.5 ml-0.5 mb-0.5 md:mt-0">
           <Button
             :variant="ButtonVariants.Tertiary"
             :label="meetLink"
