@@ -39,9 +39,9 @@
 </template>
 
 <script setup lang="ts">
+import Nexcent from "../assets/logo/Nexcent.svg";
 import Close from "../assets/Close.svg";
 import Bars from "../assets/Bars.svg";
-import Nexcent from "../assets/logo/Nexcent.svg";
 import { header } from "../data/uiData.json";
 import Button from "../components/Button.vue";
 import { ButtonVariants } from "../Constants";
