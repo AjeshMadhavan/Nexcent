@@ -12,14 +12,14 @@
             :key="client.clientCompanyLogo"
             :src="client.clientCompanyLogo"
             :alt="CLIENT_COMPANY_LOGO_ALT_TEXT"
-            class="pr-2 md:pr-5 lg:pr-8 xl:pr-10"
+            class="px-3 md:px-5 lg:px-8 xl:px-10"
           />
           <img
             v-for="client in clientsSection.clients"
             :key="client.clientCompanyLogo"
             :src="client.clientCompanyLogo"
             :alt="CLIENT_COMPANY_LOGO_ALT_TEXT"
-            class="pr-2 md:pr-5 lg:pr-8 xl:pr-10"
+            class="px-3 md:px-5 lg:px-8 xl:px-10"
           />
         </Vue3Marquee>
       </div>
@@ -31,6 +31,6 @@
 import { Vue3Marquee } from "vue3-marquee";
 import { clientsSection } from "../data/uiData.json";
 
-const MARQUEE_DURATION = 3;
+const MARQUEE_DURATION = 6;
 const CLIENT_COMPANY_LOGO_ALT_TEXT = "client company logo";
 </script>

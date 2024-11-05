@@ -63,7 +63,7 @@ import Button from "../components/Button.vue";
 const { title, description, buttonText } = uiData.heroBanner;
 
 const CAROUSAL_ITEMS_LENGTH = 3;
-const CAROUSAL_CHANGE_INTERVAL_IN_MS = 2000;
+const CAROUSAL_CHANGE_INTERVAL_IN_MS = 3000;
 const CAROUSAL_TRANSITION_DURATION_IN_MS = 1000;
 const CAROUSAL_TRANSITION_STYLE = `transform ${CAROUSAL_TRANSITION_DURATION_IN_MS}ms ease`;
 const CAROUSAL_TRANSITION_INITIAL_STYLE = "none";
