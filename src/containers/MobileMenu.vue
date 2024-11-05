@@ -12,21 +12,17 @@
       </a>
     </div>
     <div class="flex flex-col gap-3 mt-5 px-2">
-      <div>
-        <Button
-          :label="buttonTexts.login"
-          :variant="ButtonVariants.Tertiary"
-          @click="handleClick"
-          class="custom-button"
-        />
-      </div>
-      <div>
-        <Button
-          :label="buttonTexts.signup"
-          @click="handleClick"
-          class="custom-button"
-        />
-      </div>
+      <Button
+        :label="buttonTexts.login"
+        :variant="ButtonVariants.Tertiary"
+        @click="handleClick"
+        class="credential-button"
+      />
+      <Button
+        :label="buttonTexts.signup"
+        @click="handleClick"
+        class="credential-button"
+      />
     </div>
   </div>
 </template>
@@ -49,7 +45,7 @@ const handleClick = (event: Event) => {
 </script>
 
 <style scoped>
-.custom-button {
+.credential-button {
   padding: 15px 0px;
 }
 </style>

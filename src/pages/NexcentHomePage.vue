@@ -1,8 +1,8 @@
 <template>
   <div :class="['relative overflow-hidden', { 'h-lvh': isMenuVisible }]">
     <div
-      class="block absolute top-19 w-full h-full bg-white z-20 transition-all duration-700 md:hidden"
-      :style="{ right: isMenuVisible ? TRANSITION_AFTER : TRANSITION_BEFORE }"
+      class="absolute top-19 w-full h-full bg-white z-20 transition-all duration-700 md:hidden"
+      :style="{ right: isMenuVisible ? POSITION_AFTER : POSITION_BEFORE }"
     >
       <mobile-menu @click="handleLinkClick" />
     </div>
@@ -61,8 +61,8 @@ import MobileLoginPanel from "../assets/MobileLoginPanel.svg";
 import { pixelGradeSection, footerDesignSection } from "../data/uiData.json";
 
 //constants
-const TRANSITION_BEFORE = "-100%";
-const TRANSITION_AFTER = "0%";
+const POSITION_BEFORE = "-100%";
+const POSITION_AFTER = "0%";
 
 const isMenuVisible = ref<boolean>(false);
 

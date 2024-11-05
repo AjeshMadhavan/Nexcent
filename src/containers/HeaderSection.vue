@@ -31,7 +31,7 @@
     <div class="md:hidden">
       <Button
         class="menu-icon"
-        :image="`src/assets/${isMenuVisible ? 'Close' : 'Bars'}.svg`"
+        :image="isMenuVisible ? Close : Bars"
         @click="handleMenuClick"
       />
     </div>
@@ -39,6 +39,8 @@
 </template>
 
 <script setup lang="ts">
+import Close from "../assets/Close.svg";
+import Bars from "../assets/Bars.svg";
 import Nexcent from "../assets/logo/Nexcent.svg";
 import { header } from "../data/uiData.json";
 import Button from "../components/Button.vue";
