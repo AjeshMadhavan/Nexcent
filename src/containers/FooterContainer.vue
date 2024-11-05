@@ -104,7 +104,6 @@ const { copyrights, footerNavItems, socialMediaIcons } = uiData.footerSection;
   &:hover,
   &:active,
   &:focus {
-    background-color: transparent;
     outline: none;
   }
 }
